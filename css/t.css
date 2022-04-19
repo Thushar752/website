@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: lightskyblue
+    url('https://i.pinimg.com/originals/3c/24/46/3c24462450c2a902bf7e18f3d9aada81.jpg');
+  color: #fff;
+  /* Push to bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+header {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+.counters {
+  background: #0f479a;
+  color: #fff;
+  padding: 40px 20px;
+  border-top: 3px lightskyblue solid;
+}
+
+.counters .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.counters i {
+  color: lightskyblue;
+  margin-bottom: 5px;
+}
+
+.counters .counter {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+  .counters .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counters .container > div:nth-of-type(1),
+  .counters .container > div:nth-of-type(2) {
+    border-bottom: 1px lightskyblue solid;
+    padding-bottom: 20px;
+  }
+}
+.icon-bar a:hover{
+  transform: translateX(0);
+}
+.icon-bar a .fab{
+  padding-left: 1rem;
+  font-size: 3rem;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom{
+  from{
+    transform: scale(0.6);
+  }
+  to{
+    transform: scale(0.9);
+  }
+}
+.icon-bar .facebook{
+  background-color: blue;
+
+}
+.icon-bar .instagram{
+  background-color: blue;
+  
+}
+.icon-bar .twitter{
+  background-color: blue;
+  
+}
+.icon-bar .callback{
+  background-color: blue;
+  
+}
+.icon-bar .whatsapp{
+  background-color: blue;
+  
+}
+.icon-bar .linkedin{
+  background-color: blue;
+  
+}
+ 
+  <h1><p id="rcorners2"><a href="#">home<a/>/<a href="#">about<a/></p></h1>
+  
+   <div style="flex-direction: column;
+    padding-left: 69px;
+    margin-bottom: -161px;
+    margin-top: -247px;
+    padding-right:55px ;
+    line-height: 26px;">
+  
+            <<h1 style="color:white; float: left;margin-top: 190px;">About Us</h1><br>
+        <p style="color:white; float: left; margin-bottom: 155px; font-size: 18px;margin-top: -13px;"><br> 
+     Eurasia Education link Pvt. Ltd. is not just an education consultancy directly partnered with the best of the best Universities around the globe but it is more than that!! as it is an initiative taken to provide the students a companionship throughout their journey of getting admitted in their dream universities abroad.Eurasia Education Link Pvt Ltd is in itself a highly renowned education consultancy in India with a team of highly experienced counselors to guide students in the best way possible. Eurasia Education Link Pvt Ltd has enlightened and will be enlightening the path of the students to get their seats in the well esteemed Universities in the most trending courses like Medical, Engineering, Aviation, Economics, Russian and English courses.
+    We share a trusted bond with students and guardians as we dont just make the path of getting admission in the best of the best Universities easy and a hassle-free tasks but we extend our companionship further than that as we dont leave them alone in the city unknown by keeping an eye on them and by being available to them for any kind of help or support as we understand that before ambitious students, they are the beloved children of their parents and they deserve the same warmth from us too after trusting on us.</p>
+  </div>
+  
+ 

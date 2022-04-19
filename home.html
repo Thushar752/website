@@ -1,0 +1,287 @@
+<!--------------------------------------contact.html-------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>contact</title>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text],input[type=tel], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: orange;
+  padding-bottom: 200px;
+  display: flex;
+}
+
+.col-25 {
+  float: left;
+  margin-top: 6px;
+width: 75%;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+
+</head>
+<body>
+  <div class="container">
+  <footer>
+
+<div class="sec contact" style="background-color:palegreen;padding-bottom: 24px;">
+    <h2 style="margin-left:4px">Corporate Head Office</h2>
+<ul class="info" style="margin: 9px;">
+  <li>
+    <span><i class="fa fa-map-marker" aria-hidden="true"></i>
+</span>
+    <span>Hansalya Building, Flat No.15 1st Floor, Barakhamba<br> Road, New Delhi 110001.</span>
+  </li>
+
+   <li>
+   <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+    <p><a href="tel:+123456789">
+Whatsapp:+91 9310153367</a></p>
+     </li>
+     <li>
+   <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+    <p><a href="tel:+123456789">
+India: +1 (800) 258-1947</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+123456789">
++91 931 015 3367</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+123456789">
++91 931 015 3367</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+123456789">
++91 931 015 3367</a><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+123456789">
++91 931 015 3367</a><br>
+<a href="tel:+123456789">
+Ukraine: +380 50 208 8834</a>
+</p>
+
+     </li>
+     <li>
+   <span><i class="fa fa-envelope-open" aria-hidden="true"></i></span>
+    <p><a href="mailto:knowmore@gmail.com">
+eurasiaeducationlinkuk@gmail.com</a></p>
+     </li>
+</ul>
+  </div>
+
+</footer>
+
+  <form >
+  <div class="row">
+    
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  
+   
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+
+     <div class="col-75">
+      <input type="tel" id="lname" name="lastname" placeholder="Phone no">
+    </div>
+  
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div> <br>
+ <div class="col-25">
+    <input type="submit" value="Submit">
+     </div>
+  </div>
+  </form>
+</div>
+</body>
+</html>
+
+<!-------------------------------------------animated counter----------------------------->
+<!--DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+   <link rel="stylesheet" href="./css/t.css">
+</head>
+<body>
+
+<header>
+      <h1>Animated Counter</h1>
+    </header>
+    <section class="counters">
+      <div class="container">
+        <div>
+          <i class="fab fa-youtube fa-4x"></i>
+          <div class="counter" data-target="60000">0</div>
+          <h3>Subscribers</h3>
+        </div>
+        <div>
+          <i class="fab fa-twitter fa-4x"></i>
+          <div class="counter" data-target="15000">0</div>
+          <h3>Followers</h3>
+        </div>
+        <div>
+          <i class="fab fa-facebook fa-4x"></i>
+          <div class="counter" data-target="9000">0</div>
+          <h3>Likes</h3>
+        </div>
+        <div>
+          <i class="fab fa-linkedin fa-4x"></i>
+          <div class="counter" data-target="5000">0</div>
+          <h3>Connections</h3>
+        </div>
+      </div>
+    </section>
+    <script>
+    const counters = document.querySelectorAll('.counter');
+const speed = 200; // The lower the slower
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+
+    // Lower inc to slow and higher to slow
+    const inc = target / speed;
+
+    // console.log(inc);
+    // console.log(count);
+
+    // Check if target is reached
+    if (count < target) {
+      // Add inc to count and output in counter
+      counter.innerText = count + inc;
+      // Call function every ms
+      setTimeout(updateCount, 1);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCount();
+});
+
+</script>
+</body>
+</html>-->
+<!-------------------------------------------half-round--------------------------------------->
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+  #rcorners2 {
+  border-radius: 48px 48px 0px 0px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 180px;
+  height: 10px; 
+  background-color: black; 
+}
+
+</style>
+</head>
+<body>
+
+    <p id="rcorners2"><a href="#" style="text-decoration: none;font-size: 18px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHome<a/>/<a href="#" style="text-decoration: none;font-size: 18px;">About Us<a/></p>
+  
+
+</body>
+</html>-->
+<!--.margin{  
+  margin: 75% 0;
+}
+.parallax{
+background: url(images/title-about.jpg) repeat fixed 100% ;
+}
+.parallax-inner{
+ padding-top: 30%;
+ padding-bottom: 30%;
+  
+}
+<div class="margin"> </div>
+<section class="parallax">
+    <div class="parallax-inner">
+       
+    </div>
+</section>  
+<div class="margin"> </div>'-->
+<!--------------------------------------items-in-a-row----------------------------------->
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+    .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.block {
+  width: 100px;
+}
+#f1f1f1
+  </style>
+</head>
+<body>
+<div class="row">
+  <div class="block">Lorem</div>
+  <div class="block">Ipsum</div>
+  <div class="block">Dolor</div>
+</div>
+</body>
+</html-->

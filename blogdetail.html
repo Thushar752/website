@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+<style>
+ .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.block {
+  width: 100px;
+}
+
+/* Style the navigation bar links */
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.main3{
+ flex: 60%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Main column */
+.side {
+  flex: 30%;
+    background-color: white;
+    padding: 20px;
+    margin-left: -47px;
+}
+
+/* Fake image, just for this example */
+.imgmain {
+ background-color: white;
+    width: 87%;
+    padding: 23px;
+}
+.imgside {
+  background-color: white;
+    width: 75%;
+    padding: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+    .margin{  
+  
+}
+.parallax{
+background: url(images/title-about.jpg) repeat fixed   ;
+background-color: rgba(0, 0, 0, 0.5);
+}
+.parallax-inner{
+    padding-top: 5%;
+    background-color: rgba(0,0,0, 0.4);
+}
+#rcorners2 {
+  border-radius: 48px 48px 0px 0px;
+  
+  padding: 20px; 
+  width: 230px;
+  height: 10px; 
+  background-color: white; 
+}
+</style>
+</head>
+
+<body>
+<div class="login-popup">
+     <div class="box">
+         <div class="img-area">
+            <div class="img">
+                 
+            </div>
+                  
+         <h3> Top Counseling Sessions by Eurasia:</h3>
+          
+        
+         </div>
+         <div class="form">
+            <div class="close">&times;</div>
+            <h3>Want Help With Admissions ?</h3>
+            <h4 style="margin-bottom:7px">Leave us your details and we will contact you</h4>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox">
+                        Remember Me
+                    </label>
+                </div>
+                <button type="button" class="btn">Submit</button>
+            </form>
+         </div>
+     </div>
+  </div>
+
+<script src="modal.js"></script>
+
+
+
+<!-- -----------------------------------topbar----------------------------------->
+
+               <header class="topbar">
+                    <div class="container flex justify-between items-center" style="padding:0px 35px;">
+                        <div class="icons" style="color: white;">
+                            <a href="#"><i class="fa fa-phone" aria-hidden="true" style="margin-right:6px"></i> Phone:+1(800)258-1947</a>
+                        </div>
+                        <div class="auth flex items-center">
+                            <div style="color: white;">
+                                <i class="fa fa-sign-in" aria-hidden="true"style="margin-right:6px"></i>
+                                 <a href="#">Log in</a>
+                            </div>
+                          
+                            <div class="ahover"> 
+                                <!--<img src="./icons/" alt="">
+                                -->
+                               <a href="#">Apply Now</a>
+                            </div>
+                            
+                            <div style="color: white;">
+                              <i class="fa fa-download" aria-hidden="true" style="margin-right:6px"></i>
+                            <a href="#">Download Brochure</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </header>
+ 
+
+
+
+<!-- -----------------------------------navbar----------------------------------->
+
+
+                     <div class="navbar">
+<div class="logo">
+               
+                    <a href="index.html"> <img src="./icons/logo.png" class ="logo" alt="logo" style="width: 251px;height: 82px;"></a>
+
+ </div>
+  <a href="index.html" style="margin-left:500px;">HOME</a>
+  <a href="about.html" >ABOUT US</a>
+
+
+<div class="dropdown">
+                    <button class="dropbtn">COUNTRIES
+                                <!--<i class="fa fa-caret-down"></i>-->
+                    </button>
+                <div class="dropdown-content">
+                    <a href="news">MEDICAL</a>
+                    <a href="news">MBA</a>
+                    <a href="news">HOTEL MANAGEMENT</a>
+                     <a href="news">AVIATION</a>
+                      <a href="news">ENGINEERING</a>
+                     <a href="news">LAW</a>
+                </div>
+             </div> 
+
+
+<div class="dropdown">
+                    <button class="dropbtn">COURSES
+                                <!--<i class="fa fa-caret-down"></i>-->
+                    </button>
+                <div class="dropdown-content">
+                    <a href="news">MEDICAL</a>
+                    <a href="news">MBA</a>
+                    <a href="news">HOTEL MANAGEMENT</a>
+                     <a href="news">AVIATION</a>
+                      <a href="news">ENGINEERING</a>
+                     <a href="news">LAW</a>
+                </div>
+             </div> 
+<a href="blog.html" >BLOG</a>
+
+             <div class="dropdown">
+                    <button class="dropbtn">MEDIA 
+                               <!-- <i class="fa fa-caret-down"></i>-->
+                    </button>
+                <div class="dropdown-content">
+                    <a href="news">VIDEOS</a>
+                    <a href="news">GALLERY</a>
+                </div>
+             </div> 
+
+<div class="dropdown">
+                    <button class="dropbtn">HELP 
+                               <!-- <i class="fa fa-caret-down"></i>-->
+                    </button>
+                <div class="dropdown-content">
+                    <a href="news">OFFICES</a>
+                    <a href="news">DOCUMENT REQUIRED</a>
+                </div>
+             </div> 
+<a href="#home" style="margin-right: 94px;">CONTACT US</a>
+</div> 
+
+
+
+<div class="margin"> </div>
+<section class="parallax">
+    <div class="parallax-inner">
+
+<!-- -----------------------------------h1----------------------------------->
+
+        <h1 style="text-align:center; font-weight: 500; font-size:300%; color:white">Blogs</h1>
+
+
+
+<!-- -----------------------------------radius----------------------------------->
+
+<p id="rcorners2" style="margin-left: 556px;
+    margin-top: 22px;
+    margin-bottom: -21px;">&nbsp&nbsp&nbsp&nbsp&nbspHome&nbsp&nbsp&nbsp&nbsp&nbsp/</p><p style="margin-left: 654px;
+    margin-top:3px;
+    margin-bottom: -21px;color: green;">&nbsp&nbsp&nbsp&nbsp&nbspVideos</p>
+
+
+<!-- -----------------------------------whitebox----------------------------------->
+<div class="row" style="margin-top: 23px;">
+
+  <div class="main3">
+
+
+<div class="imgmain" style="margin-left: 90px;">
+      <h2>
+    Best food facility and student life at IFMNU
+</h2><br>
+<p> Posted By Admin</p><br>
+<p> June 29,2021</p><br>
+<div><img src="images/blog1.jpg" style="width:100%;height:100%"></div><br><br>
+<p style="line-height: 30px;">
+When students think of completing MBBS abroad, the only thing that comes into their mind is about the university campus's food facility and student life. However, after getting admission to a top university for MBBS in Ukraine, students do not have to think much about food facility and student life at the university campus in Ivano-Frankivsk National Medical University, world-class facilities are offered and a safe environment is provided to the students. Let us discuss in detail the food facility and students life at Ivano-Frankivsk National Medical University.</p>
+<br>
+Food
+<br><br>
+<p style="line-height:30px">The food facilities that are provided to the students looking to take admission in the Ivano-Frankivsk National<br> Medical University are listed below:<br></p>
+<ul style="line-height: 40px;">
+<li>Students can enjoy having healthy meals from the university cafeterias.</li>
+
+<li>University students also have the option to cook their food in the kitchen provided</li>
+
+<li>         The good news for the Indian students is that they have the option of consuming Indian food.</li>
+
+<li>        University is situated at the market area, which means students can visit the nearest supermarket to easily avail<br> themselves of amazing food items.</li>
+
+<li>        Students can get the amazing Indian food in restaurant availability near Ivano city.
+
+Student Life at IFMNU</li>
+
+Students enjoy the amazing college life at IFMNU. Let us have a glimpse of the student life at university.
+
+<li>        Student gets the modern campus facility at Ivano-Frankivsk National Medical University, including gym and centre for recreational activities.</li>
+
+<li>    Apart from studies, students at Ivano-Frankivsk National Medical University access several additional facilities like a scientific library, table-tennis tables, study rooms and many more.</li>
+<li>         Students get access to join several clubs to showcase their talents.</li>
+
+<li>      Students at Ivano Frankivsk national medical University gets familiar with the European standard of living.</li>
+
+<li>      Students get to know about the culture and traditions of the country.</li>
+
+<li>     It is the great chance for the students to get them aware of multiple areas in Europe.
+
+World Ranking of Ivano Frankivsk National Medical University</li>
+
+<li>      Ivano-Frankivsk National Medical University ranked at 79th position as the top university of Ukraine.</li>
+
+<li>      When talking of world ranking, then Ivano-Frankivsk National Medical University is at the 7917th position. A perfect university for pursuing MBBS in Ukraine.</li>
+
+Why Ivano Frankivsk National Medical University?
+
+<li>       Ivano Frankivsk National Medical University has an experience of more than a decade in helping students accomplish their dream of becoming a doctor.</li>
+
+<li>      Ivano Frankivsk National Medical University is highly recognized by the Ministry of Health and Education of Ukraine.</li>
+
+<li>       In the University, students also get access to visit the scientific library with more than 800 students.</li>
+
+<li>         The student does not require passing any of the entrance tests.</li>
+
+<li>        University provides you plenty of scope, and teacher makes every possible effort to train the students in the best<br> possible manner.</li>
+
+<li>        After getting graduated from this university, students can practice medicine anywhere in the world. As this university is globally recognized.</li>
+</ul>
+<p style="line-height: 30px">After getting aware of the student life and food facilities at Ivano Frankivsk National Medical University all your doubts must be cleared. Now for what you are waiting for quickly consult Eurasia education link, the best study abroad</li> consultants to book your seat in the top medical universities of Ukraine.</p><br>
+<hr><br>
+<h3>If you liked the blog please like, share and subscribe to the blogs</h3>
+<div class="row" style="margin-top: 27px;">
+  <div class="block"><i class="fa fa-heart-o" aria-hidden="true" style="font-size:35px;color:red;"></i></div>
+  <div class="block"><i class="fa fa-file-text-o" aria-hidden="true" style="font-size:35px;color:green"></i></div>
+  <div class="block"><i class="fa fa-facebook-official" aria-hidden="true" style="font-size:38px;color:darkblue" ></i></div>
+  <div class="block"> <i class="fa fa-twitter-square" aria-hidden="true" style="font-size:38px;color:#66ccff;"></i></div>
+  <div class="block"> <i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:38px;color:#006bb3"></i></div>
+  <div class="block"><i class="fa fa-whatsapp" aria-hidden="true" style="font-size:38px;color:green;"></i></div>
+</div>
+</div>
+
+<br><br><br>
+
+</div>
+  <div class="side">
+
+    <div class="imgside" style="height: 179px;
+    margin-left: -3px;">
+    <h2>Latest Posts</h2>
+<img src="images/blog1.jpg" style="width: 76px; height: 50px;margin-top: 27px;">
+      <h3 style="margin-left: 98px;margin-top: -66px;">
+    Best food facility and student life at IFMNU</h3>
+    <p style="margin-left: 100px;
+    font-size: 15px;margin-top: 9px;">Posted On:Jun 29, 2021</p>
+     
+</div>
+    
+    <div class="imgside" style="height: 143px;
+    margin-left: -3px;">
+    
+<img src="images/blog2.jpg" style="width: 76px; height: 50px;margin-top: 25px;">
+      <h3 style="margin-left: 98px;margin-top: -99px;">
+   Top hostel facilities at Ivano Frankivsk National Medical University Hostel?</h3>
+    <p style="margin-left: 100px;
+    font-size: 15px;margin-top: 14px;">Posted On:Jun 29, 2021</p>
+     
+</div>
+    
+    <div class="imgside" style="height: 128px;
+    margin-left: -3px;">
+    
+<img src="images/blog3.jpg" style="width: 76px; height: 50px;margin-top: 12px;">
+      <h3 style="margin-left: 98px;margin-top: -84px;">
+    Top medical universities in Ukraine for Indian students</h3>
+    <p style="margin-left: 100px;
+    font-size: 15px;margin-top: 11px;">Posted On:Jun 29, 2021</p>
+     
+</div>
+  
+
+<div class="imgside" style="height: 148px;
+    margin-left: -3px;">
+   
+<img src="images/blog4.jpg" style="width: 76px; height: 50px;margin-top: 17px;">
+      <h3 style="margin-left: 98px;margin-top: -91px;">
+    Obtaining MBBS education in Ukraine totally worth your investment</h3>
+    <p style="margin-left: 100px;
+    font-size: 15px;margin-top: 12px;">Posted On:Jun 29, 2021</p>
+     
+</div>
+    
+
+    <div class="imgside" style="height: 116px;
+    margin-left: -3px;">
+<img src="images/blog5.jpg" style="width: 76px; height: 50px;margin-top: 7px;">
+      <h3 style="margin-left: 98px;margin-top: -72px;">
+    Best food facility and student life at IFMNU</h3>
+    <p style="margin-left: 100px;
+    font-size: 15px;margin-top: 19px;">Posted On:Jun 29, 2021</p>
+     
+</div>
+    <br>
+  </div>
+</div>
+
+
+
+
+
+</section>  
+<div class="margin"> </div>'
+<footer style="margin-top: -8px;">
+<div class="container">
+   <div class="sec quicklinks">
+    <h2>Top Countries</h2>
+<ul style="margin:2px">
+  <li><a href="#">MBBS in Ukraine</a></li>
+   <li><a href="#">MBBS in China</a></li>
+    <li><a href="#">MBBS in Kazakhstan</a></li>
+     <li><a href="#">MBBS in Bangladesh</a></li>
+     <li><a href="#">MBBS in Germany</a></li>
+     <li><a href="#">MBBS in Poland</a></li>
+     <li><a href="#">MBBS in Belarus</a></li>
+      <li><a href="#"> MBBS in Russia</a></li>
+</ul>
+  </div>
+  <div class="sec quicklinks">
+    <h2>Top Universities</h2>
+<ul style="margin:2px">
+  <li><a href="#">Ivano-Frankivsk National Medical University</a></li>
+   <li><a href="#">Danylo Halytsky Lviv National Medical University</a></li>
+    <li><a href="#">Ukrainian Medical Stomatological Academy</a></li>
+     <li><a href="#">Bogomolets National Medical University</a></li>
+</ul>
+  </div>
+  <div class="sec quicklinks">
+    <h2>Quick Links</h2>
+<ul style="margin:2px">
+  <li><a href="#">About Us</a></li>
+   <li><a href="#">Apply Now</a></li>
+    <li><a href="#">Gallery</a></li>
+     <li><a href="#">Offices</a></li>
+     <li><a href="#">Contact Us</a></li>
+     <li><a href="#">Documents Required</a></li>
+</ul>
+  </div>
+  <div class="sec quicklinks">
+    <h2>Study With Us</h2>
+<ul style="margin:2px">
+  <li><a href="#">Medical</a></li>
+   <li><a href="#">MBA</a></li>
+    <li><a href="#">Hotel Management</a></li>
+     <li><a href="#">Aviation</a></li>
+     <li><a href="#">Engineering</a></li>
+     <li><a href="#">Law</a></li>
+</ul>
+  </div>
+<div class="sec contact" style="background-color:green;padding-bottom: 24px;">
+    <h2 style="margin-left:4px">Contact</h2>
+<ul class="info" style="margin: 9px;">
+  <li>
+    <span><i class="fa fa-map-marker" aria-hidden="true"></i>
+</span>
+    <span>Hansalya Building, Flat No.15 <br>1st Floor, Barakhamba Road,<br> New Delhi 110001.</span>
+  </li>
+
+   <li>
+   <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+    <p><a href="tel:+123456789">
+Whatsapp:+91 9310153367</a></p>
+     </li>
+     <li>
+   <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+    <p><a href="tel:+123456789">
+India: +1 (800) 258-1947</a><br>
+<a href="tel:+123456789">
++91 931 015 3367</a><br>
+<a href="tel:+123456789">
++91 931 015 3367</a><br>
+<a href="tel:+123456789">
++91 931 015 3367</a><br>
+<a href="tel:+123456789">
++91 931 015 3367</a><br>
+<a href="tel:+123456789">
+Ukraine: +380 50 208 8834</a>
+</p>
+
+     </li>
+     <li>
+   <span><i class="fa fa-envelope-open" aria-hidden="true"></i></span>
+    <p><a href="mailto:knowmore@gmail.com">
+eurasiaeducationlinkuk<br> @gmail.com</a></p>
+     </li>
+</ul>
+  </div>
+</div>
+</footer>
+<div class="copyright"><p>Copyright © 2021 Eurasia Education Link All Rights Reserved.</p></div>
+
+<div class="icon-bar">
+    <a href="https://www.youtube.com/" class="facebook" target="#">
+        Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i>
+    </a>
+     <a href="#" class="instagram" target="#">
+        Instagram <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+     <a href="#" class="youtube" target="#">
+        Youtube <i class="fa fa-youtube-play" aria-hidden="true"></i>
+    </a>
+     <a href="#" class="linkedin" target="#">
+        Linkedin <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    </a>
+     <a href="#" class="twitter" target="#">
+        Twitter <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    </a>
+     <a href="#" class="Whatsapp" target="#">
+        Whatsapp<i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a>
+     <a href="#" class="callback" target="#">
+        Callback <i class="fa fa-phone-square" aria-hidden="true"></i>
+    </a>
+</div>
+</body>
+</html>
